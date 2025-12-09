@@ -11,10 +11,9 @@ High-fidelity dashboard concept plus blueprint/handoff docs.
 - Shows how I translate dense product requirements into a cohesive system.
 - Highlights accessibility, motion, and documentation skills that align with the job brief.
 
-## Run / Deploy
-```bash
-npm install
-npm run dev
-npm run build
-```
-Deploy to Vercel with `next build`. Include the live URL + updated Figma link when applying.
+## Collaboration Notes
+- `/blueprint` spells out the IA, responsive grids, motion guidelines, and developer checklist that accompany the mocks.
+- `/docs/design-system.md` and `/docs/architecture.md` explain the tokens, spacing, and user journey decisions.
+- Design file: [TaskFlow Dashboard Spec](https://www.figma.com/file/gamemaker-taskflow/TaskFlow-Dashboard-Spec?type=design).
+
+Deploy on Vercel with the standard Next.js command (`next build`) and surface the live URL + design file in your application packet.
