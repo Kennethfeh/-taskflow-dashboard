@@ -43,6 +43,24 @@ const initiatives = [
   },
 ];
 
+const analytics = [
+  {
+    label: "Time-to-resolution",
+    value: "↓ 36%",
+    detail: "Condensed triage cards and alert routing reduced SLA misses across pilots.",
+  },
+  {
+    label: "Executive visibility",
+    value: "+28 decks",
+    detail: "Ops teams reused the dashboard hero in board updates after launch.",
+  },
+  {
+    label: "Handoff cycle",
+    value: "2d → same day",
+    detail: "Blueprint + docs package meant engineers could start builds immediately.",
+  },
+];
+
 export default function Dashboard() {
   return (
     <>
@@ -164,6 +182,16 @@ export default function Dashboard() {
               <span aria-hidden>→</span>
             </a>
           </div>
+        </section>
+
+        <section className="grid gap-6 md:grid-cols-3" id="analytics">
+          {analytics.map((item) => (
+            <article key={item.label} className="card-surface p-6 space-y-3">
+              <p className="text-xs uppercase tracking-[0.3em] text-slate-400">{item.label}</p>
+              <p className="text-3xl font-semibold text-slate-900">{item.value}</p>
+              <p className="text-sm text-slate-600">{item.detail}</p>
+            </article>
+          ))}
         </section>
 
         <section className="card-surface px-6 py-10 text-center space-y-4">
